@@ -39,12 +39,14 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: larger;
 }
+
 .wrap {
   display: flex;
   justify-content: space-between;
   position: relative;
   padding-top: 10em;
 }
+
 .usageofblock {
   color: blue;
   margin-left: 3em;
@@ -52,12 +54,14 @@ h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 .usageofinline {
   color: red;
   font-size: large;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 span {
   color: rgb(249, 249, 255);
   background-image: linear-gradient(to right, red, rgb(238, 186, 144));

@@ -23,6 +23,7 @@ h2 {
   color: white;
   box-shadow: 2px 2px 4px 5px black;
 }
+
 .container2 {
   background-image: linear-gradient(to right, red, rgb(238, 186, 144));
   border-radius: 20px;
@@ -31,6 +32,7 @@ h2 {
   color: white;
   box-shadow: 2px 2px 4px 5px black;
 }
+
 .intro {
   text-align: center;
   margin: 2em 0em 0em 15em; /*TRBL */

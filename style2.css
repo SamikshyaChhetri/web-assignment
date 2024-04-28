@@ -38,12 +38,16 @@ li {
 }
 table {
   background-color: antiquewhite;
-}
-th {
-  padding: 1em;
-  padding-left: 2em;
+  border-spacing: 0px;
   border: 2px solid black;
 }
-tr:nth-child(odd) {
-  background-color: gray;
+th {
+  padding: 0.5em;
+  border-bottom: 2px solid black; /* Border style for table headers */
+}
+td {
+  padding: 0.5em;
+}
+tr:nth-child(n + 2):nth-child(odd) {
+  background-color: grey; /* Background color for odd rows starting from the second row */
 }

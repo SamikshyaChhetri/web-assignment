@@ -1,0 +1,49 @@
+body {
+  display: flex;
+}
+.intro {
+  text-align: center;
+  margin: 2em 0em 0em 0em; /*TRBL */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: larger;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+  margin: 3em;
+}
+ul {
+  list-style: square;
+  font-size: larger;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+li {
+  padding: 3px;
+}
+.list {
+  background-image: linear-gradient(
+    to right,
+    rgb(141, 93, 217),
+    rgb(93, 200, 243)
+  );
+  width: max-content;
+  border-radius: 20px;
+  padding: 1em;
+  text-align: left;
+  color: white;
+}
+.tab {
+  margin-right: 3em;
+}
+table {
+  background-color: antiquewhite;
+}
+th {
+  padding: 1em;
+  padding-left: 2em;
+  border: 2px solid black;
+}
+tr:nth-child(odd) {
+  background-color: gray;
+}

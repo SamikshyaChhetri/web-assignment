@@ -43,7 +43,7 @@ table {
 }
 th {
   padding: 0.5em;
-  border-bottom: 2px solid black; /* Border style for table headers */
+  border-bottom: 2px solid black;
   background-color: black;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,

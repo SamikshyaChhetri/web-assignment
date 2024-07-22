@@ -7,40 +7,52 @@
       body {
         padding: 0;
         margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 30px;
       }
-      .container {
-        display: flex;
-        justify-content: space-around;
-      }
+
       .wrap {
         display: flex;
         justify-content: space-between;
         width: 100%;
         height: 100vh;
       }
-      .gray {
+      .first {
+        display: flex;
         width: 20%;
         background-image: linear-gradient(skyblue, rgb(6, 147, 240));
+        align-items: center;
+        justify-content: center;
       }
-      .green {
+      .second {
+        display: flex;
+        align-items: center;
         background-image: linear-gradient(rgb(136, 255, 136), green);
-
         width: 60%;
+        justify-content: center;
       }
-      .blue {
+      .third {
+        display: flex;
+        align-items: center;
         background-color: skyblue;
         background-image: linear-gradient(lightpink, rgb(245, 70, 155));
         width: 20%;
+        justify-content: center;
       }
     </style>
     <title>Lab 1.6</title>
   </head>
   <body>
-    <div class="container">
-      <div class="wrap">
-        <div class="gray"></div>
-        <div class="green"></div>
-        <div class="blue"></div>
+    <div class="wrap">
+      <div class="first">
+        <div>Contents of pages</div>
+      </div>
+      <div class="second">
+        <div>Body of page</div>
+      </div>
+      <div class="third">
+        <div>Highlights</div>
       </div>
     </div>
   </body>

@@ -1,0 +1,83 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  margin: 9px 0px 9px 0px;
+  border: none;
+  font-size: 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrap {
+  justify-content: center;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+.registerHere {
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+label {
+  font-size: large;
+  padding: 10px 10px 10px 0px;
+}
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 2em;
+  border: none;
+  width: 100%;
+}
+button:hover {
+  background-color: #027e50;
+  cursor: pointer;
+}
+.space {
+  border-bottom: 1px solid black;
+  padding: 0.5em;
+}
+.fb {
+  text-align: center;
+  background-color: #1877f2;
+  padding: 8px 0px;
+  color: white;
+  margin-top: 1em;
+}
+.fb:hover {
+  background-color: #0060de;
+  cursor: pointer;
+}
+.google {
+  text-align: center;
+  padding: 8px 0px;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  margin-top: 1em;
+}
+.google:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}

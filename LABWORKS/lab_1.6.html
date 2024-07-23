@@ -12,16 +12,19 @@
       .container {
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 60%;
         margin-top: 5em;
       }
-      .head {
+      .headContainer {
+        display: flex;
         height: 100px;
         background-color: red;
-        text-align: center;
         color: white;
         font-size: 30px;
+        align-items: center;
+        justify-content: center;
       }
+
       .second {
         height: 100px;
         background-color: orange;
@@ -43,26 +46,33 @@
         background-color: skyblue;
         width: 50%;
       }
-      .footer {
+      .footerContainer {
+        display: flex;
         height: 100px;
         background-color: grey;
-        text-align: center;
+
         color: white;
         font-size: 30px;
+        align-items: center;
+        justify-content: center;
       }
     </style>
     <title>Lab 1.6</title>
   </head>
   <body>
     <div class="container">
-      <div class="head">Header</div>
+      <div class="headContainer">
+        <div class="head">Header</div>
+      </div>
       <div class="second"></div>
       <div class="wrap">
         <div class="gray"></div>
         <div class="green"></div>
         <div class="blue"></div>
       </div>
-      <div class="footer">Footer</div>
+      <div class="footerContainer">
+        <div class="footer">Footer</div>
+      </div>
     </div>
   </body>
 </html>

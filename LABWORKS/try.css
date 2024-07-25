@@ -1,11 +1,13 @@
 /* External CSS */
 .external {
+  display: flex;
+  justify-content: space-around;
   background-color: #bbdefb;
   color: #0d47a1;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
+  width: 80%;
 }
 .external h2 {
   border-bottom: 2px solid #0d47a1;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 2.1</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 30vh; */
+      }
+      .clickButton button {
+        position: absolute;
+        top: 100px;
+        width: 90px;
+        height: 40px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clickButton">
+      <button id="clickMe">Click</button>
+    </div>
+  </body>
+  <script>
+    document.getElementById("clickMe").addEventListener("click", () => {
+      alert("Displayed Alert message");
+    });
+  </script>
+</html>

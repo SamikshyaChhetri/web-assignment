@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of Two Numbers</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      .container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Sum of Two Numbers</h2>
+      <p id="result"></p>
+    </div>
+
+    <script>
+      // Prompt the user to enter the first number
+      const num1 = parseFloat(prompt("Enter the first number:"));
+
+      // Prompt the user to enter the second number
+      const num2 = parseFloat(prompt("Enter the second number:"));
+
+      // Calculate the sum of the two numbers
+      const sum = num1 + num2;
+
+      // Display the sum in the paragraph with id 'result'
+      document.getElementById(
+        "result"
+      ).innerText = `The sum of ${num1} and ${num2} is ${sum}.`;
+    </script>
+  </body>
+</html>

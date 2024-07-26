@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      #time {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="time"></div>
+  </body>
+  <script>
+    const arr = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    const week = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    setInterval(() => {
+      const element = document.getElementById("time");
+      let curr_date = new Date();
+      let month = curr_date.getMonth();
+      let date = curr_date.getDate();
+      let year = curr_date.getFullYear();
+      let day = curr_date.getDay();
+      let hours = curr_date.getHours();
+      let min = curr_date.getMinutes();
+      element.innerHTML =
+        arr[month] +
+        " " +
+        date +
+        ", " +
+        year +
+        " " +
+        week[day] +
+        " " +
+        hours +
+        ":" +
+        min;
+    }, 1000);
+  </script>
+</html>

@@ -33,17 +33,14 @@
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" />
-          <div id="usernameError" class="error"></div>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" />
-          <div id="emailError" class="error"></div>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" />
-          <div id="passwordError" class="error"></div>
         </div>
         <button type="button" class="button" onclick="validateForm()">
           Register
@@ -52,10 +49,13 @@
     </div>
   </body>
   <script>
+    const name = document.getElementById("username").value;
+    const emailId = document.getElementById("email").value;
+    const pw = document.getElementById("password").value;
     function validateForm() {
-      const name = document.getElementById("username").value;
-      const emailId = document.getElementById("email").value;
-      const pw = document.getElementById("password").value;
+      if (name == "" && emailId == "" && pw == "") {
+        alert("Input fill up required");
+      }
     }
   </script>
 </html>

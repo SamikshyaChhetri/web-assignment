@@ -8,6 +8,7 @@
       form {
         display: flex;
         flex-direction: column;
+        gap: 10px;
         text-align: justify;
       }
       .form-group {
@@ -24,6 +25,11 @@
       input {
         padding: 5px;
       }
+      .error {
+        color: red;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body>
@@ -33,29 +39,56 @@
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" />
+          <div id="usernameError" class="error"></div>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" />
+          <div id="emailError" class="error"></div>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" />
+          <div id="passwordError" class="error"></div>
         </div>
         <button type="button" class="button" onclick="validateForm()">
           Register
         </button>
       </form>
     </div>
-  </body>
-  <script>
-    const name = document.getElementById("username").value;
-    const emailId = document.getElementById("email").value;
-    const pw = document.getElementById("password").value;
-    function validateForm() {
-      if (name == "" && emailId == "" && pw == "") {
-        alert("Input fill up required");
+    <script>
+      function validateForm() {
+        document.getElementById("usernameError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("passwordError").innerText = "";
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        let isValid = true;
+        if (username === "") {
+          document.getElementById("usernameError").innerText =
+            "Username is required.";
+          isValid = false;
+        }
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+          document.getElementById("emailError").innerText =
+            "Email is required.";
+          isValid = false;
+        } else if (!emailPattern.test(email)) {
+          document.getElementById("emailError").innerText =
+            "Invalid email format.";
+          isValid = false;
+        }
+        if (password === "") {
+          document.getElementById("passwordError").innerText =
+            "Password is required.";
+          isValid = false;
+        }
+        if (isValid) {
+          alert("Form submitted successfully!");
+        }
       }
-    }
-  </script>
+    </script>
+  </body>
 </html>

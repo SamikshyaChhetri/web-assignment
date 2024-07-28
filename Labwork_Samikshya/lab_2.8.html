@@ -5,28 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lab 2.8</title>
   </head>
-  <body></body>
-  <script>
-    function setCookie(name, value, days) {
-      const date = new Date();
-      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-      const expires = "expires=" + date.toUTCString();
-      document.cookie = name + "=" + value + ";" + expires + ";path=/";
-    }
-    function getCookie(name) {
-      const nameEQ = name + "=";
-      const ca = document.cookie.split(";");
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) === " ") c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) === 0)
-          return c.substring(nameEQ.length, c.length);
+  <body>
+    <h1>Cookie Management</h1>
+
+    <div>
+      <h2>Set Cookie</h2>
+      <label for="cookieName">Name:</label>
+      <input type="text" id="cookieName" />
+      <label for="cookieValue">Value:</label>
+      <input type="text" id="cookieValue" />
+      <label for="cookieDays">Days to Expire:</label>
+      <input type="number" id="cookieDays" />
+      <button onclick="setCookieHandler()">Set Cookie</button>
+    </div>
+
+    <div>
+      <h2>Get Cookie</h2>
+      <label for="getCookieName">Name:</label>
+      <input type="text" id="getCookieName" />
+      <button onclick="getCookieHandler()">Get Cookie</button>
+      <p id="cookieValueDisplay"></p>
+    </div>
+
+    <div>
+      <h2>Delete Cookie</h2>
+      <label for="deleteCookieName">Name:</label>
+      <input type="text" id="deleteCookieName" />
+      <button onclick="deleteCookieHandler()">Delete Cookie</button>
+    </div>
+
+    <script>
+      function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
       }
-      return null;
-    }
-    function deleteCookie(name) {
-      document.cookie =
-        name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    }
-  </script>
+
+      function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(";");
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) === " ") c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) === 0)
+            return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+      }
+
+      function deleteCookie(name) {
+        document.cookie =
+          name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      }
+
+      function setCookieHandler() {
+        const name = document.getElementById("cookieName").value;
+        const value = document.getElementById("cookieValue").value;
+        const days = parseInt(document.getElementById("cookieDays").value);
+        setCookie(name, value, days);
+        alert(`Cookie "${name}" set with value "${value}" for ${days} days.`);
+      }
+    </script>
+  </body>
 </html>

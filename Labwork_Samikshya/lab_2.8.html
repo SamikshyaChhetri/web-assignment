@@ -7,7 +7,6 @@
   </head>
   <body>
     <h1>Cookie Management</h1>
-
     <div>
       <h2>Set Cookie</h2>
       <label for="cookieName">Name:</label>
@@ -18,7 +17,6 @@
       <input type="number" id="cookieDays" />
       <button onclick="setCookieHandler()">Set Cookie</button>
     </div>
-
     <div>
       <h2>Get Cookie</h2>
       <label for="getCookieName">Name:</label>
@@ -26,14 +24,12 @@
       <button onclick="getCookieHandler()">Get Cookie</button>
       <p id="cookieValueDisplay"></p>
     </div>
-
     <div>
       <h2>Delete Cookie</h2>
       <label for="deleteCookieName">Name:</label>
       <input type="text" id="deleteCookieName" />
       <button onclick="deleteCookieHandler()">Delete Cookie</button>
     </div>
-
     <script>
       function setCookie(name, value, days) {
         const date = new Date();
@@ -41,7 +37,6 @@
         const expires = "expires=" + date.toUTCString();
         document.cookie = name + "=" + value + ";" + expires + ";path=/";
       }
-
       function getCookie(name) {
         const nameEQ = name + "=";
         const ca = document.cookie.split(";");
@@ -53,12 +48,10 @@
         }
         return null;
       }
-
       function deleteCookie(name) {
         document.cookie =
           name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       }
-
       function setCookieHandler() {
         const name = document.getElementById("cookieName").value;
         const value = document.getElementById("cookieValue").value;
@@ -66,14 +59,12 @@
         setCookie(name, value, days);
         alert(`Cookie "${name}" set with value "${value}" for ${days} days.`);
       }
-
       function getCookieHandler() {
         const name = document.getElementById("getCookieName").value;
         const value = getCookie(name);
         const display = document.getElementById("cookieValueDisplay");
         display.textContent = value ? `Value: ${value}` : "Cookie not found.";
       }
-
       function deleteCookieHandler() {
         const name = document.getElementById("deleteCookieName").value;
         deleteCookie(name);

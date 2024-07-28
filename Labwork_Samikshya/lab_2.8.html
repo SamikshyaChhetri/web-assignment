@@ -66,6 +66,19 @@
         setCookie(name, value, days);
         alert(`Cookie "${name}" set with value "${value}" for ${days} days.`);
       }
+
+      function getCookieHandler() {
+        const name = document.getElementById("getCookieName").value;
+        const value = getCookie(name);
+        const display = document.getElementById("cookieValueDisplay");
+        display.textContent = value ? `Value: ${value}` : "Cookie not found.";
+      }
+
+      function deleteCookieHandler() {
+        const name = document.getElementById("deleteCookieName").value;
+        deleteCookie(name);
+        alert(`Cookie "${name}" deleted.`);
+      }
     </script>
   </body>
 </html>

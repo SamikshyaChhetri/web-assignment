@@ -6,6 +6,48 @@
     <title>Dropdown Selection</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      position: absolute;
+      left: 20em;
+      top: 3em;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+      transition: border-color 0.3s;
+    }
+
+    select:focus {
+      border-color: #007bff;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #display {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
   <body>
     <label for="dropdown">Choose an option:</label>
     <select id="dropdown">

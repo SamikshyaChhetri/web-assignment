@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sequential Animation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        margin-bottom: 20px;
+      }
+
+      #animateDiv {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(5, 5, 5);
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, opacity 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="animateButton">Animate</button>
+    <div id="animateDiv"></div>
+
+    <script>
+      $(document).ready(function () {
+        $("#animateButton").click(function () {
+          $("#animateDiv").animate({ width: "200px" }, 500, function () {
+            $("#animateDiv").animate({ height: "200px" }, 500, function () {
+              $("#animateDiv").animate({ opacity: 0.5 }, 500);
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

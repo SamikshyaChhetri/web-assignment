@@ -16,5 +16,25 @@
     </select>
     <button id="getSelection">Get Selected Value and Text</button>
     <p id="display"></p>
+
+    <script>
+      $(document).ready(function () {
+        $("#getSelection").click(function () {
+          // Get the selected value
+          var selectedValue = $("#dropdown").val();
+
+          // Get the selected text
+          var selectedText = $("#dropdown option:selected").text();
+
+          // Display the selected value and text
+          $("#display").text(
+            "Selected Value: " +
+              selectedValue +
+              ", Selected Text: " +
+              selectedText
+          );
+        });
+      });
+    </script>
   </body>
 </html>

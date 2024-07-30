@@ -15,6 +15,15 @@
             height: 50vh;
             text-align: center;
         }
+
+        .output {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            width: 50%;
+        }
     </style>
 </head>
 

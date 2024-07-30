@@ -3,78 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Internal CSS -->
-    <style>
-      /* Internal CSS */
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        background-color: #fafafa;
-        margin: 0;
-        padding: 20px;
-      }
-      h1 {
-        color: #444;
-        border-bottom: 2px solid #444;
-        padding-bottom: 5px;
-      }
-      .internal {
-        width: 80%;
-
-        display: flex;
-        justify-content: space-around;
-        background-color: #dcedc8;
-        color: #33691e;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      }
-      .internal h2 {
-        border-bottom: 2px solid #33691e;
-      }
-    </style>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="try.css" />
-
-    <title>CSS Styling Examples</title>
+    <title>Iframe Example</title>
   </head>
   <body>
-    <div
-      class="inline"
-      style="
-        width: 80%;
-        display: flex;
-        justify-content: space-around;
-        background-color: #ffccbc;
-        color: #d84315;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      "
+    <h1>Welcome to My Website</h1>
+    <p>This is an example of embedding another website using an iframe.</p>
+
+    <iframe
+      src="https://www.example.com"
+      width="600"
+      height="400"
+      title="Example Site"
     >
-      <h2 style="border-bottom: 2px solid #d84315">Inline CSS</h2>
-      <p style="font-weight: bold">
-        Hello, I am styled using inline CSS. Inline styles apply directly to the
-        HTML elements using the style attribute.
-      </p>
-    </div>
+      Your browser does not support iframes.
+    </iframe>
 
-    <div class="internal">
-      <h2>Internal CSS</h2>
-      <p>
-        Hello, I am styled using internal CSS. Internal styles are defined
-        within the &lt;style&gt; tags in the head section of the HTML document.
-      </p>
-    </div>
-
-    <div class="external">
-      <h2>External CSS</h2>
-      <p>
-        Hello, I am styled using external CSS. External styles are linked
-        through a separate CSS file.
-      </p>
-    </div>
+    <p>The content above is from example.com, displayed within an iframe.</p>
   </body>
 </html>

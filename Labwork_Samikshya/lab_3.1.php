@@ -37,7 +37,6 @@
                 return "Error: Division by zero.";
             }
         }
-
         function divide($numerator, $denominator)
         {
             if ($denominator == 0) {

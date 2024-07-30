@@ -46,7 +46,7 @@
                 <option value="USA">USA</option>
                 <option value="Canada">Canada</option>
                 <option value="UK">UK</option>
-                <option value="Australia">Australia</option>
+                <option value="Nepal">Nepal</option>
             </select>
         </div>
         <button type="submit">Submit</button>

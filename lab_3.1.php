@@ -30,12 +30,10 @@
 <body>
     <div class="output">
         <?php
-        // Custom exception class for Divide by Zero
         class DivideByZeroException extends Exception
         {
             public function errorMessage()
             {
-                // Error message
                 return "Error: Division by zero.";
             }
         }
@@ -54,10 +52,8 @@
             $result = divide($numerator, $denominator);
             echo "Result: $result";
         } catch (DivideByZeroException $e) {
-            // Handle divide by zero exception
             echo $e->errorMessage();
         } catch (Exception $e) {
-            // Handle any other exceptions
             echo "Error: " . $e->getMessage();
         }
         ?>

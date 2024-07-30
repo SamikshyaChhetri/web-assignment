@@ -45,7 +45,6 @@
             }
             return $numerator / $denominator;
         }
-
         try {
             $numerator = 10;
             $denominator = 0;

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "books.dtd">
+<?xml-stylesheet type="text/xsl" href="book.xslt"?>
+<library>
+    <book isbn="978-0131103627">
+        <name>
+            <firstname>Samikshya</firstname>
+            <middlename>B.</middlename>
+            <lastname>Chhetri</lastname>
+        </name>
+        <authors>
+            <author>
+                <firstname>Brian</firstname>
+                <middlename>W.</middlename>
+                <lastname>Kernighan</lastname>
+            </author>
+            <author>
+                <firstname>Dennis</firstname>
+                <middlename>M.</middlename>
+                <lastname>Ritchie</lastname>
+            </author>
+        </authors>
+        <pageno>274</pageno>
+        <price value="599">599</price>
+    </book>
+    <book isbn="978-0262033848">
+        <name>
+            <firstname>Thomas</firstname>
+            <middlename>H.</middlename>
+            <lastname>Cormen</lastname>
+        </name>
+        <authors>
+            <author>
+                <firstname>Thomas</firstname>
+                <middlename>H.</middlename>
+                <lastname>Cormen</lastname>
+            </author>
+            <author>
+                <firstname>Charles</firstname>
+                <middlename>E.</middlename>
+                <lastname>Leiserson</lastname>
+            </author>
+            <author>
+                <firstname>Ronald</firstname>
+                <middlename>L.</middlename>
+                <lastname>Rivest</lastname>
+            </author>
+            <author>
+                <firstname>Clifford</firstname>
+                <middlename>Stein</middlename>
+                <lastname>Stein</lastname>
+            </author>
+        </authors>
+        <pageno>1312</pageno>
+        <price value="799">799</price>
+    </book>
+</library>

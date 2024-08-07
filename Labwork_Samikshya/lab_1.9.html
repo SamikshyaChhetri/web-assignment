@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Sheet</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+      }
+      .marksheet {
+        width: 100%;
+        max-width: 210mm; /* A4 width */
+        margin: 0;
+        border-collapse: collapse;
+      }
+
+      .marksheet th,
+      .marksheet td {
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+      }
+      .marksheet th {
+        background-color: #0d0d0e;
+        color: white;
+      }
+
+      .marksheet caption {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="marksheet">
+      <caption>
+        Mark Sheet
+      </caption>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Full Marks</th>
+          <th>Pass Marks</th>
+          <th>Marks Obtained</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Theory of Computaion</td>
+          <td>100</td>
+          <td>40</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Computer Network</td>
+          <td>100</td>
+          <td>40</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>Operating System</td>
+          <td>100</td>
+          <td>40</td>
+          <td>76</td>
+        </tr>
+        <tr>
+          <td>Database Management System</td>
+          <td>100</td>
+          <td>40</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Artificial Intelligence</td>
+          <td>100</td>
+          <td>40</td>
+          <td>85</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>500</td>
+          <td>200</td>
+          <td>386</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.red {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+address,
+city,
+email,
+phone {
+  display: block;
+  margin-bottom: 10px;
+}

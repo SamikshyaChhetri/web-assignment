@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="contacts.xslt"?>
+<contacts>
+    <contact>
+        <name class="red">Samikshya Chhetri</name>
+        <address>Patan,Lalitpur</address>
+        <city>Kathmandu</city>
+        <email>samikshya@gmail.com</email>
+        <phone>+977-9876543377</phone>
+    </contact>
+    <contact>
+        <name class="green">Tom White</name>
+        <address>202 Victoria Road</address>
+        <city>Dartmouth</city>
+        <email>tom@dal.ca</email>
+        <phone>4940002</phone>
+    </contact>
+</contacts>

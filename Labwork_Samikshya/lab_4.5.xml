@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="music_collection.xslt"?>
+<MusicCollection>
+    <Song>
+        <Name>Song One</Name>
+        <Singer>Name: Neha Kakkar</Singer>
+        <Composer>Composer: Tony Kakkar</Composer>
+        <Length>3:45</Length>
+    </Song>
+    <Song>
+        <Name>Song Two</Name>
+        <Singer>Name: Arijit Singh</Singer>
+        <Composer>Composer: Pritam</Composer>
+        <Length>4:10</Length>
+    </Song>
+    <Song>
+        <Name>Song Three</Name>
+        <Singer>Name: Sunidhi Chauhan</Singer>
+        <Composer>Composer: Salim Merchant</Composer>
+        <Length>3:30</Length>
+    </Song>
+    <Song>
+        <Name>Song Four</Name>
+        <Singer>Name: Darshan Raval</Singer>
+        <Composer>Composer: Darshan Raval</Composer>
+        <Length>4:00</Length>
+    </Song>
+</MusicCollection>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student.xslt"?>
+<students>
+    <student>
+        <name>Ram</name>
+        <address>Kathmandu</address>
+        <rollno>3001</rollno>
+    </student>
+    <student>
+        <name>Shyam</name>
+        <address>Bhaktapur</address>
+        <rollno>3002</rollno>
+    </student>
+    <student>
+        <name>Hari</name>
+        <address>Lalitpur</address>
+        <rollno>3003</rollno>
+    </student>
+    <student>
+        <name>Sita</name>
+        <address>Pokhara</address>
+        <rollno>3004</rollno>
+    </student>
+</students>

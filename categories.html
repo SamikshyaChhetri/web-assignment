@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Category</title>
+  </head>
+  <body>
+    <h1>Create a New Category</h1>
+    <form action="categories.php" method="POST">
+      <label for="category_name">Category Name:</label>
+      <input
+        type="text"
+        id="category_name"
+        name="category_name"
+        placeholder="Enter category name"
+        required
+      />
+      <br /><br />
+      <label for="description">Description:</label>
+      <textarea
+        id="description"
+        name="description"
+        placeholder="Enter category description"
+        required
+      ></textarea>
+      <br /><br />
+
+      <button type="submit" name="create_category">Create Category</button>
+    </form>
+    <hr />
+    <h2>List of Categories</h2>
+    <form action="categories.php" method="GET">
+      <button type="submit">View All Categories</button>
+    </form>
+    <hr />
+    <h2>Categories List</h2>
+    <?php
+      if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        listCategories($conn);
+      }
+    ?>
+  </body>
+</html>
